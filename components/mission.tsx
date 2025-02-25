@@ -13,10 +13,10 @@ export const Mission = () => {
           </h2>
           <div className="space-y-6">
             <p>
-              We're organizing a house for students and recent grads from around
+              We&apos;re organizing a house for students and recent grads from around
               the world, making the Silicon Valley experience accessible to
               exceptional young engineers. As founders from Paraguay and
-              Argentina, we've seen incredible talent go unnoticed abroad and
+              Argentina, we&apos;ve seen incredible talent go unnoticed abroad and
               are dedicated to creating opportunities for them here.
             </p>
 
