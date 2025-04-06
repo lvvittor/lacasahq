@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
@@ -13,10 +14,27 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const tiempos = localFont({
+  src: [
+    {
+      path: '../public/fonts/headline/test-tiempos-headline-regular.woff2',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../public/fonts/headline/test-tiempos-headline-regular-italic.woff2',
+      weight: '400',
+      style: 'italic',
+    },
+    // Add other weights/styles as needed
+  ],
+  variable: '--font-tiempos',
+});
+
 export const metadata: Metadata = { // TODO: Change metadata
-  title: "Shadcn Blocks",
+  title: "La casa",
   description:
-    "Speed up your workflow with responsive, pre-built UI blocks designed for marketing websites.",
+    "A house for international, exceptional engineers.",
 };
 
 export default function RootLayout({
@@ -27,7 +45,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${tiempos.variable} antialiased`}
       >
         {children}
       </body>

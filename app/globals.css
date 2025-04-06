@@ -8,6 +8,10 @@
 
   --font-mono: 'Geist Mono', 'Fira Code', monospace;
 
+  --font-calendas: Calendas Plus, sans-serif;
+  --font-overused-grotesk: Overused Grotesk, sans-serif;
+  --font-tiempos-headline: Tiempos Headline, sans-serif;
+
   --color-background: hsl(var(--background));
   --color-foreground: hsl(var(--foreground));
 
@@ -129,4 +133,32 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  @font-face {
+    font-family: "Overused Grotesk";
+    src:
+      url("../public/fonts/OverusedGrotesk-VF.woff2")
+        format("woff2 supports variations"),
+      url("../public/fonts/OverusedGrotesk-VF.woff2")
+        format("woff2-variations");
+    font-weight: 300 900;
+  }
+
+  @font-face {
+    font-family: "Tiempos Headline";
+    src:
+      url("../public/fonts/OverusedGrotesk-VF.woff2")
+        format("woff2 supports variations"),
+      url("../public/fonts/OverusedGrotesk-VF.woff2")
+        format("woff2-variations");
+    font-weight: 300 900;
+  }
+
+  @font-face {
+    font-family: "Calendas Plus";
+    src: url("../public/fonts/calendas_plus-webfont.woff") format("woff");
+    font-weight: 400;
+  }
+
+
 }
